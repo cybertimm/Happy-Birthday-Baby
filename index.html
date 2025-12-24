@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Happy Birthday Bukola My Love 💙</title>
 
   <style>
     * {
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: "Segoe UI", sans-serif;
     }
 
     body {
@@ -19,7 +19,7 @@
 
     section {
       min-height: 100vh;
-      padding: 60px 30px;
+      padding: 70px 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,19 +28,15 @@
     }
 
     h1 {
-      font-size: 2.8rem;
-      margin-bottom: 15px;
-      animation: fadeIn 1.5s ease forwards;
+      font-size: 2.7rem;
+      margin-bottom: 20px;
     }
 
     p {
       max-width: 720px;
       font-size: 1.15rem;
-      line-height: 1.8;
+      line-height: 1.9;
       margin-bottom: 20px;
-      opacity: 0;
-      animation: fadeUp 1.5s ease forwards;
-      animation-delay: 0.4s;
     }
 
     /* Scrapbook */
@@ -48,8 +44,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      max-width: 1100px;
+      gap: 28px;
+      max-width: 1200px;
       margin-top: 30px;
     }
 
@@ -81,16 +77,6 @@
       animation: floatUp 6s linear infinite;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(25px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     @keyframes floatUp {
       from { transform: translateY(0); opacity: 1; }
       to { transform: translateY(-110vh); opacity: 0; }
@@ -105,66 +91,52 @@
     <h1>Hi Bukola 💙</h1>
     <p>
       I made this just for you.  
-      Something gentle. Something honest.  
-      Something that reminds you how deeply you are loved.
+      A small corner of the internet to remind you how deeply you are loved.
     </p>
   </section>
 
-  <!-- LOVE + GROWTH -->
+  <!-- LOVE & GROWTH -->
   <section>
-    <h1>Watching You Become 🤍</h1>
-
+    <h1>Watching You Grow 🤍</h1>
     <p>
       Loving you has been one of the most meaningful things in my life.
-      I’ve watched you grow over the years, not just older,
-      but wiser, stronger, kinder, and more confident in who you are.
+      I’ve watched you grow, not just older, but stronger, wiser,
+      and more confident in who you are.
     </p>
-
     <p>
-      You’ve handled challenges with grace, even when no one was watching.
-      You’ve learned, adapted, and kept moving forward 
-      and that quiet strength in you is one of the things I admire most.
+      You’ve faced challenges quietly, learned bravely,
+      and kept moving forward even when it wasn’t easy.
+      I admire that strength in you more than you know.
     </p>
-
     <p>
-      I hope you always remember how far you’ve come.
-      And I hope you never doubt how far you can still go.
+      Never forget how far you’ve come 
+      and never doubt how far you can still go. You're just starting out and you're gonna live a good life.
     </p>
   </section>
 
   <!-- SCRAPBOOK -->
   <section>
     <h1>Little Pieces of You 📸</h1>
-
-    <div class="scrapbook">
-      <img src="TLU_9669.png">
-      <img src="TLU_9697.png">
-      <img src="TLU_9711.jpg">
-      <img src="TLU_9733.jpg">`
-      <!-- add ~20 images here -->
-    </div>
+    <div class="scrapbook" id="scrapbook"></div>
   </section>
 
   <!-- FUTURE -->
   <section>
     <h1>Your Story Is Still Unfolding ✨</h1>
-
     <p>
-      There are still so many places you’ll go,
+      There are still so many places waiting for you,
       so many dreams you’ll bring to life,
-      and so many versions of yourself you haven’t met yet.
+      and so many beautiful moments ahead.
     </p>
-
     <p>
-      Wherever life takes you, I hope it’s filled with joy,
-      purpose, and moments that remind you of your worth.
-      And I hope you always know you’re never walking alone.
+      Wherever life takes you,
+      I hope it’s filled with joy, purpose,
+      and people who see your worth the way I do.
     </p>
-
     <p>
       I’m proud of you.  
       I believe in you.  
-      And I love you — today, and all the days ahead.
+      And I love you — always.
     </p>
   </section>
 
@@ -172,15 +144,33 @@
   <section>
     <h1>Happy Birthday, Bukola 🎉💙</h1>
     <p>
-      May this new year be kind to you.
-      May it open doors, soften the hard days,
-      and bring you closer to everything you deserve.
+      May this year be kind to you,
+      bold for you,
+      and full of moments that make you smile.
     </p>
-
-    <p><strong>Always yours 🤍</strong></p>
+    <p><strong>Forever yours 🤍</strong></p>
   </section>
 
   <script>
+    // Your existing images (add more here anytime)
+    const images = [
+      "TLU_9669.png",
+      "TLU_9697.png",
+      "TLU_9711.jpg",
+      "TLU_9733.jpg"
+      // add more filenames below
+    ];
+
+    const scrapbook = document.getElementById("scrapbook");
+
+    images.forEach(src => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.loading = "lazy";
+      scrapbook.appendChild(img);
+    });
+
+    // Floating hearts
     function createHeart() {
       const heart = document.createElement("div");
       heart.className = "heart";
@@ -188,7 +178,6 @@
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
       document.body.appendChild(heart);
-
       setTimeout(() => heart.remove(), 6000);
     }
 
