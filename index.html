@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Happy Birthday My Beautiful Girl ❤️</title>
+  <title>Happy Birthday Bukola 💙</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -11,59 +12,73 @@
 
     body {
       margin: 0;
-      background: linear-gradient(120deg, #ffd6e8, #ffeef6);
-      color: #4a2c3a;
+      background: linear-gradient(180deg, #cfe9ff, #eef7ff);
+      color: #243a5e;
       overflow-x: hidden;
     }
 
     section {
       min-height: 100vh;
+      padding: 60px 30px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      padding: 40px;
       text-align: center;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      animation: fadeIn 2s ease forwards;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      animation: fadeIn 1.5s ease forwards;
     }
 
     p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      line-height: 1.7;
+      max-width: 720px;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
       opacity: 0;
-      animation: fadeUp 2s ease forwards;
-      animation-delay: 0.5s;
+      animation: fadeUp 1.5s ease forwards;
+      animation-delay: 0.4s;
     }
 
-    img {
-      width: 260px;
-      border-radius: 20px;
-      margin-top: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      animation: fadeIn 2s ease forwards;
+    /* Scrapbook */
+    .scrapbook {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1100px;
+      margin-top: 30px;
     }
 
-    .typewriter {
-      font-size: 1.5rem;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid pink;
-      width: 0;
-      animation: typing 4s steps(40, end) forwards, blink 0.7s infinite;
+    .scrapbook img {
+      width: 220px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease;
     }
 
+    .scrapbook img:nth-child(odd) {
+      transform: rotate(-4deg);
+    }
+
+    .scrapbook img:nth-child(even) {
+      transform: rotate(4deg);
+    }
+
+    .scrapbook img:hover {
+      transform: scale(1.08) rotate(0deg);
+    }
+
+    /* Floating hearts */
     .heart {
       position: fixed;
       bottom: -20px;
-      font-size: 20px;
-      animation: float 6s linear infinite;
-      color: #ff6fa5;
+      font-size: 18px;
+      color: #4da6ff;
+      animation: floatUp 6s linear infinite;
     }
 
     @keyframes fadeIn {
@@ -72,89 +87,112 @@
     }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(25px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes typing {
-      to { width: 100%; }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
-
-    @keyframes float {
+    @keyframes floatUp {
       from { transform: translateY(0); opacity: 1; }
       to { transform: translateY(-110vh); opacity: 0; }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- SECTION 1 -->
+  <!-- INTRO -->
   <section>
-    <h1>Hi my love ❤️</h1>
+    <h1>Hi Bukola 💙</h1>
     <p>
-      I made this little page just for you… because you deserve
-      something as special as you are.
+      I made this just for you.  
+      Something gentle. Something honest.  
+      Something that reminds you how deeply you are loved.
     </p>
   </section>
 
-  <!-- SECTION 2 -->
+  <!-- LOVE + GROWTH -->
   <section>
-    <h1>Us 🤍</h1>
-    <img src="TLU_9711.jpg" alt="Her photo">
+    <h1>Watching You Become 🤍</h1>
 
     <p>
-      Every moment with you feels like home.
-      Your smile, your laugh, your heart — I love all of it.
+      Loving you has been one of the most meaningful things in my life.
+      I’ve watched you grow over the years — not just older,
+      but wiser, stronger, kinder, and more confident in who you are.
+    </p>
+
+    <p>
+      You’ve handled challenges with grace, even when no one was watching.
+      You’ve learned, adapted, and kept moving forward —
+      and that quiet strength in you is one of the things I admire most.
+    </p>
+
+    <p>
+      I hope you always remember how far you’ve come.
+      And I hope you never doubt how far you can still go.
     </p>
   </section>
-  
-<!-- SECTION 3 -->
-  <section>
-    <h1> Your Gallery</h1>
-    <img src="TLU_9711.jpg" alt="Her photo">, <img src="TLU_9669.png" alt="Her photo">
-     <img src="TLU_9697.png" alt="Her photo">
-     <img src="TLU_9711.jpg" alt="Her photo">
-     <img src="TLU_9733.jpg" alt="Her photo">
-  </section>
-  
 
-  <!-- SECTION 4 -->
+  <!-- SCRAPBOOK -->
   <section>
-    <div class="typewriter">
-      You make my world softer, warmer, and happier 💕
+    <h1>Little Pieces of You 📸</h1>
+
+    <div class="scrapbook">
+      <img src="TLU_9669.png">
+      <img src="TLU_9697.png">
+      <img src="TLU_9711.jpg">
+      <img src="TLU_9733.jpg">
+      <!-- add ~20 images here -->
     </div>
   </section>
 
-  <!-- SECTION 5 -->
+  <!-- FUTURE -->
   <section>
-    <h1>Happy Birthday 🎉</h1>
+    <h1>Your Story Is Still Unfolding ✨</h1>
+
     <p>
-      May this new year bring you joy, love, peace, money, happinness, wisdom and everything your
-      beautiful heart desires. I’m so grateful to love you.
+      There are still so many places you’ll go,
+      so many dreams you’ll bring to life,
+      and so many versions of yourself you haven’t met yet.
     </p>
-    <p><strong>Forever yours ❤️</strong></p>
+
+    <p>
+      Wherever life takes you, I hope it’s filled with joy,
+      purpose, and moments that remind you of your worth.
+      And I hope you always know you’re never walking alone.
+    </p>
+
+    <p>
+      I’m proud of you.  
+      I believe in you.  
+      And I love you — today, and all the days ahead.
+    </p>
+  </section>
+
+  <!-- BIRTHDAY -->
+  <section>
+    <h1>Happy Birthday, Bukola 🎉💙</h1>
+    <p>
+      May this new year be kind to you.
+      May it open doors, soften the hard days,
+      and bring you closer to everything you deserve.
+    </p>
+
+    <p><strong>Always yours 🤍</strong></p>
   </section>
 
   <script>
-    // Floating hearts
     function createHeart() {
       const heart = document.createElement("div");
-      heart.classList.add("heart");
-      heart.innerHTML = "❤";
+      heart.className = "heart";
+      heart.innerHTML = "💙";
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
       document.body.appendChild(heart);
 
-      setTimeout(() => {
-        heart.remove();
-      }, 6000);
+      setTimeout(() => heart.remove(), 6000);
     }
 
-    setInterval(createHeart, 400);
+    setInterval(createHeart, 500);
   </script>
 
 </body>
