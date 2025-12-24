@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday ❤️</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(120deg, #ffd6e8, #ffeef6);
+      color: #4a2c3a;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.7;
+      opacity: 0;
+      animation: fadeUp 2s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    img {
+      width: 260px;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .typewriter {
+      font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid pink;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.7s infinite;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      animation: float 6s linear infinite;
+      color: #ff6fa5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes typing {
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(-110vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SECTION 1 -->
+  <section>
+    <h1>Hi my love ❤️</h1>
+    <p>
+      I made this little page just for you… because you deserve
+      something as special as you are.
+    </p>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section>
+    <h1>Us 🤍</h1>
+    <img src="https://via.placeholder.com/300x400" alt="Her photo">
+    <p>
+      Every moment with you feels like home.
+      Your smile, your laugh, your heart — I love all of it.
+    </p>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section>
+    <div class="typewriter">
+      You make my world softer, warmer, and happier 💕
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section>
+    <h1>Happy Birthday 🎉</h1>
+    <p>
+      May this new year bring you joy, love, and everything your
+      beautiful heart desires. I’m so grateful to love you.
+    </p>
+    <p><strong>Forever yours ❤️</strong></p>
+  </section>
+
+  <script>
+    // Floating hearts
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 400);
+  </script>
+
+</body>
+</html>
