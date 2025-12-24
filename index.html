@@ -151,38 +151,72 @@
     <p><strong>Forever yours 🤍</strong></p>
   </section>
 
-  <script>
-    // Your existing images (add more here anytime)
-    const images = [
-      "TLU_9669.png",
-      "TLU_9697.png",
-      "TLU_9711.jpg",
-      "TLU_9733.jpg"
-      // add more filenames below
-    ];
+<script>
+  const images = [
+    "IT1.JPG",
+    "IT2.JPG",
+    "IT3.JPG",
 
-    const scrapbook = document.getElementById("scrapbook");
+    "Baby.JPG",
+    "IMG_9288.JPG",
+    "IMG_9268.JPG",
+    "IMG_7102.heic",
+    "IMG_7097.heic",
+    "Sittingpretty1.JPG",
+    "SittingPretty2.JPG",
+    "Anniversary.JPG",
+    "IMG_4576.heic",
+    "IMG_4560.HEIC",
+    "IMG_4551.heic",
+    "IMG_4545.heic",
+    "IMG_4502.HEIC",
+    "IMG_4466.heic",
+    "IMG_6712.HEIC",
 
-    images.forEach(src => {
-      const img = document.createElement("img");
-      img.src = src;
-      img.loading = "lazy";
-      scrapbook.appendChild(img);
-    });
+    "_DSC1718.JPG",
+    "_DSC1703.JPG",
+    "_DSC1563.JPG",
+    "_DSC1525.JPG",
+    "_DSC1285.JPG",
 
-    // Floating hearts
-    function createHeart() {
-      const heart = document.createElement("div");
-      heart.className = "heart";
-      heart.innerHTML = "💙";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 6000);
-    }
+    "IMG_1067.PNG",
+    "IMG_3162.JPG",
+    "IMG_0304.heic",
+    "IMG_0013.HEIC",
+    "IMG_0011.HEIC",
+    "IMG_4108.HEIC",
+    "IMG_9319.heic",
+    "IMG_8970.heic",
+    "IMG_8933.heic",
+    "IMG_8903.JPG",
+    "IMG_8901.JPG",
+    "IMG_8900.JPG",
+    "IMG_3184.HEIC",
+    "IMG_3183.HEIC",
+    "IMG_2929.HEIC",
+    "IMG_2640.HEIC",
+    "IMG_2638.HEIC",
+    "IMG_2636.HEIC",
 
-    setInterval(createHeart, 500);
-  </script>
+    "IMG_6531.HEIC",
+    "c14b9180-11fb-4b98-b2ad-4d53d81348af.JPG",
+    "c22ceca3-7c32-4114-9132-5a463f29dd81.JPG",
+    "IMG_6201.HEIC",
+    "IMG_3323.heic",
+    "IMG_3319.HEIC",
+    "IMG_3318.heic"
+  ];
+
+  const scrapbook = document.getElementById("scrapbook");
+
+  images.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.loading = "lazy";
+    scrapbook.appendChild(img);
+  });
+</script>
+
 
 </body>
 </html>
